@@ -1,4 +1,4 @@
--- Mert Altuntaş 1804010005
+﻿-- Mert Altuntaş 1804010005
 DROP TABLE Students
 
 --main
@@ -84,7 +84,7 @@ CREATE TABLE document(
     type_no int NOT NULL,
     title varchar NOT NULL,
     content text,
-    file bigint NOT NULL,
+    doc_file bigint NOT NULL,
     PRIMARY KEY (document_id)
     FOREIGN KEY (lecture_id) REFERENCES lectures(lecture_id),
     FOREIGN KEY (type_no) REFERENCES document_type(type_no)
