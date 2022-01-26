@@ -56,3 +56,40 @@ CREATE TABLE department(
     department_name varchar(20),
     PRIMARY KEY (department_id)
 );
+
+--member document
+CREATE TABLE member_document(
+    member_doc_id int NOT NULL,
+    document_id int NOT NULL,
+    score int NOT NULL,
+    member_id int NOT NULL,
+    PRIMARY KEY (member_doc_id)
+    FOREIGN KEY (document_id) REFERENCES document(document_id)
+    FOREIGN KEY (member_id) REFERENCES member(member_id)
+);
+
+--member lecture
+CREATE TABLE member_lecture(
+    member_id int NOT NULL,
+    lecture_id int NOT NULL,
+    PRIMARY KEY (member_id),
+    FOREIGN KEY (member_id) REFERENCES member(member_id),
+    FOREIGN KEY (lecture_id) REFERENCES lectures(lecture_id) 
+);
+
+--document
+CREATE TABLE document(
+    document_id int NOT NULL,
+    lecture_id int NOT NULL,
+    type_no int NOT NULL,
+    title varchar NOT NULL,
+    content text,
+    file bigint NOT NULL,
+    PRIMARY KEY (document_id)
+    FOREIGN KEY (lecture_id) REFERENCES lectures(lecture_id),
+    FOREIGN KEY (type_no) REFERENCES document_type(type_no)
+);
+
+--lectures
+
+--document_type
