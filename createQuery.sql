@@ -3,7 +3,7 @@
 --department
 CREATE TABLE department(
     department_id int NOT NULL,
-    department_name varchar(20),
+    department_name varchar(20) NOT NULL,
     PRIMARY KEY (department_id)
 );
 
@@ -11,7 +11,7 @@ CREATE TABLE department(
 CREATE TABLE member_faculty(
 
     faculty_id int NOT NULL,
-    faculty_name varchar(20),
+    faculty_name varchar(20) NOT NULL,
     department_id int NOT NULL,
     PRIMARY KEY (faculty_id),
     FOREIGN KEY (department_id) REFERENCES department(department_id) 
@@ -20,7 +20,7 @@ CREATE TABLE member_faculty(
 --level
 CREATE TABLE member_level(
     level_id int NOT NULL,
-    level_name varchar(10),
+    level_name varchar(10) NOT NULL,
     PRIMARY KEY (level_id)
 );
 
@@ -57,8 +57,8 @@ CREATE TABLE lectures(
 CREATE TABLE document_type(
     type_no int NOT NULL,
     doc_type_name varchar(20) NOT NULL,
-    start_time datetime2,
-    finish_time datetime2,
+    start_time datetime2 NOT NULL,
+    finish_time datetime2 NOT NULL,
     PRIMARY KEY (type_no)
 );
 
