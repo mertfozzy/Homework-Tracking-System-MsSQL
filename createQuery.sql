@@ -1,5 +1,28 @@
 ﻿-- Mert Altuntaş 1804010005
-DROP TABLE Students
+
+--department
+CREATE TABLE department(
+    department_id int NOT NULL,
+    department_name varchar(20),
+    PRIMARY KEY (department_id)
+);
+
+--faculty
+CREATE TABLE member_faculty(
+
+    faculty_id int NOT NULL,
+    faculty_name varchar(20),
+    department_id int NOT NULL,
+    PRIMARY KEY (faculty_id),
+    FOREIGN KEY (department_id) REFERENCES department(department_id) 
+);
+
+--level
+CREATE TABLE member_level(
+    level_id int NOT NULL,
+    level_name varchar(10),
+    PRIMARY KEY (level_id)
+);
 
 --main
 CREATE TABLE member(
@@ -21,51 +44,22 @@ CREATE TABLE member(
 	FOREIGN KEY (level_id) REFERENCES member_level(level_id)
 );
 
---message
-CREATE TABLE member_messages(
-    message_id bigint NOT NULL,
-    sender_id int NOT NULL,
-    receiver_id int NOT NULL,
-    title varchar(50),
-    content text,
-    message_date datetime2 NOT NULL,
-    ip int,
-    PRIMARY KEY (message_id)
+--lectures
+CREATE TABLE lectures(
+    lecture_id int NOT NULL,
+    lecture_name varchar(30) NOT NULL,
+    credit int NOT NULL,
+    lecture_hour int NOT NULL,
+    PRIMARY KEY (lecture_id)
 );
 
---level
-CREATE TABLE member_level(
-    level_id int NOT NULL,
-    level_name varchar(10),
-    PRIMARY KEY (level_id)
-);
-
---faculty
-CREATE TABLE member_faculty(
-
-    faculty_id int NOT NULL,
-    faculty_name varchar(20),
-    department_id int NOT NULL,
-    PRIMARY KEY (faculty_id),
-    FOREIGN KEY (department_id) REFERENCES department(department_id) 
-);
-
---department
-CREATE TABLE department(
-    department_id int NOT NULL,
-    department_name varchar(20),
-    PRIMARY KEY (department_id)
-);
-
---member document
-CREATE TABLE member_document(
-    member_doc_id int NOT NULL,
-    document_id int NOT NULL,
-    score int NOT NULL,
-    member_id int NOT NULL,
-    PRIMARY KEY (member_doc_id)
-    FOREIGN KEY (document_id) REFERENCES document(document_id)
-    FOREIGN KEY (member_id) REFERENCES member(member_id)
+--document_type
+CREATE TABLE document_type(
+    type_no int NOT NULL,
+    doc_type_name varchar(20) NOT NULL,
+    start_time datetime2,
+    finish_time datetime2,
+    PRIMARY KEY (type_no)
 );
 
 --member lecture
@@ -85,25 +79,31 @@ CREATE TABLE document(
     title varchar NOT NULL,
     content text,
     doc_file bigint NOT NULL,
-    PRIMARY KEY (document_id)
+    PRIMARY KEY (document_id),
     FOREIGN KEY (lecture_id) REFERENCES lectures(lecture_id),
     FOREIGN KEY (type_no) REFERENCES document_type(type_no)
 );
 
---lectures
-CREATE TABLE lectures(
-    lecture_id int NOT NULL,
-    name varchar(30) NOT NULL,
-    credit int NOT NULL,
-    hour int NOT NULL,
-    PRIMARY KEY (lecture_id)
+--member document
+CREATE TABLE member_document(
+    member_doc_id int NOT NULL,
+    document_id int NOT NULL,
+    score int NOT NULL,
+    member_id int NOT NULL,
+    PRIMARY KEY (member_doc_id),
+    FOREIGN KEY (document_id) REFERENCES document(document_id),
+    FOREIGN KEY (member_id) REFERENCES member(member_id)
 );
 
---document_type
-CREATE TABLE document_type(
-    type_no int NOT NULL,
-    type_name varchar(20) NOT NULL,
-    start datetime2,
-    finish datetime2,
-    PRIMARY KEY (type_no)
+--message
+CREATE TABLE member_messages(
+    message_id bigint NOT NULL,
+    sender_id int NOT NULL,
+    receiver_id int NOT NULL,
+    title varchar(50),
+    content text,
+    message_date datetime2 NOT NULL,
+    message_ip int,
+    PRIMARY KEY (message_id)
 );
+
