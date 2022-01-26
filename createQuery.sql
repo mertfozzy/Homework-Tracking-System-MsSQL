@@ -26,19 +26,19 @@ CREATE TABLE member_level(
 
 --main
 CREATE TABLE member(
-	member_id int,
+	member_id int NOT NULL,
 	username nvarchar(20) NOT NULL,
 	lastname nvarchar(20) NOT NULL,
-	member_password varchar(20),
+	member_password varchar(20) NOT NULL,
 	faculty_id int NOT NULL,
 	level_id int NOT NULL,
-    phone int,
-    mail nvarchar(255),
-    adress text,
+    phone int NOT NULL,
+    mail nvarchar(255) NOT NULL,
+    adress text NOT NULL,
     tc_identity_num int NOT NULL,
     date_of_birth date NOT NULL,
-    country varchar(50),
-    city varchar(50),
+    country varchar(50) NOT NULL,
+    city varchar(50) NOT NULL,
 	PRIMARY KEY (member_id),
 	FOREIGN KEY (faculty_id) REFERENCES member_faculty(faculty_id),
 	FOREIGN KEY (level_id) REFERENCES member_level(level_id)
