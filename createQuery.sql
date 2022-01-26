@@ -91,5 +91,19 @@ CREATE TABLE document(
 );
 
 --lectures
+CREATE TABLE lectures(
+    lecture_id int NOT NULL,
+    name varchar(30) NOT NULL,
+    credit int NOT NULL,
+    hour int NOT NULL,
+    PRIMARY KEY (lecture_id)
+);
 
 --document_type
+CREATE TABLE document_type(
+    type_no int NOT NULL,
+    type_name varchar(20) NOT NULL,
+    start datetime2,
+    finish datetime2,
+    PRIMARY KEY (type_no)
+);
