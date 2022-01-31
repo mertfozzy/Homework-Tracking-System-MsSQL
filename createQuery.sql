@@ -112,6 +112,7 @@ CREATE TABLE member_messages(
 	1, 'Mert', 'Altuntaş', 'mert2000', 8, 3, 100, 'mertfozzy@gmail.com', 'Ümraniye', '123456789',  '2000-03-19', 'Turkey', 'İstanbul'
 )*/
 
+--insert department
 INSERT INTO department (department_id, department_name) VALUES (1, 'Computer Engineering')
 INSERT INTO department (department_id, department_name) VALUES (2, 'Software Engineering')
 INSERT INTO department (department_id, department_name) VALUES (3, 'Computer Science')
@@ -122,6 +123,7 @@ INSERT INTO department (department_id, department_name) VALUES (7, 'Graphic Desi
 INSERT INTO department (department_id, department_name) VALUES (8, 'Digital Game Design')
 INSERT INTO department (department_id, department_name) VALUES (9, 'International Trade and Finance')
 
+--insert faculty
 SELECT member_faculty.department_id FROM member_faculty INNER JOIN department ON department.department_id = member_faculty.department_id
 INSERT INTO member_faculty (department_id, faculty_id, faculty_name) VALUES (1, 1, 'Engineering')
 INSERT INTO member_faculty (department_id, faculty_id, faculty_name) VALUES (5, 2, 'Social Science')
@@ -129,8 +131,31 @@ INSERT INTO member_faculty (department_id, faculty_id, faculty_name) VALUES (6, 
 INSERT INTO member_faculty (department_id, faculty_id, faculty_name) VALUES (7, 4, 'Arts')
 INSERT INTO member_faculty (department_id, faculty_id, faculty_name) VALUES (9, 5, 'Business and Administrative')
 
+--insert member level
 INSERT INTO member_level (level_id, level_name) VALUES (1, 'Freshman')
 INSERT INTO member_level (level_id, level_name) VALUES (2, 'Sophomore')
 INSERT INTO member_level (level_id, level_name) VALUES (3, 'Junior')
 INSERT INTO member_level (level_id, level_name) VALUES (4, 'Senior')
 INSERT INTO member_level (level_id, level_name) VALUES (5, 'Master')
+
+--insert document type
+INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (1, 'Computer Science', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
+INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (2, 'Action and Adventure', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
+INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (3, 'Classics', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
+INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (4, 'Comic', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
+INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (5, 'Mystery', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
+INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (6, 'Fantasy', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
+INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (7, 'Historical Fiction', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
+INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (8, 'Horror', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
+INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (9, 'Literary Fiction', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
+INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (10, 'Romance', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
+INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (11, 'Sci-Fi', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
+INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (12, 'Short Stories', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
+INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (13, 'Suspense', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
+INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (14, 'Womens Fiction', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
+INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (15, 'Biographies', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
+INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (16, 'Cookbooks', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
+INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (17, 'Autobiographies', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
+INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (18, 'Essays', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
+INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (19, 'History', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
+INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (20, 'Memoir', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
