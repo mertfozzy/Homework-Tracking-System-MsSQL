@@ -12,7 +12,7 @@ CREATE TABLE member_faculty(
 
     faculty_id int NOT NULL,
     faculty_name varchar(20) NOT NULL,
-    department_id int NOT NULL,
+    department_id int,
     PRIMARY KEY (faculty_id),
     FOREIGN KEY (department_id) REFERENCES department(department_id) 
 );
@@ -107,3 +107,30 @@ CREATE TABLE member_messages(
     PRIMARY KEY (message_id)
 );
 
+
+/*INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
+	1, 'Mert', 'Altuntaş', 'mert2000', 8, 3, 100, 'mertfozzy@gmail.com', 'Ümraniye', '123456789',  '2000-03-19', 'Turkey', 'İstanbul'
+)*/
+
+INSERT INTO department (department_id, department_name) VALUES (1, 'Computer Engineering')
+INSERT INTO department (department_id, department_name) VALUES (2, 'Software Engineering')
+INSERT INTO department (department_id, department_name) VALUES (3, 'Computer Science')
+INSERT INTO department (department_id, department_name) VALUES (4, 'Architecture')
+INSERT INTO department (department_id, department_name) VALUES (5, 'Psychology')
+INSERT INTO department (department_id, department_name) VALUES (6, 'Aviation Management')
+INSERT INTO department (department_id, department_name) VALUES (7, 'Graphic Design')
+INSERT INTO department (department_id, department_name) VALUES (8, 'Digital Game Design')
+INSERT INTO department (department_id, department_name) VALUES (9, 'International Trade and Finance')
+
+SELECT member_faculty.department_id FROM member_faculty INNER JOIN department ON department.department_id = member_faculty.department_id
+INSERT INTO member_faculty (department_id, faculty_id, faculty_name) VALUES (1, 1, 'Engineering')
+INSERT INTO member_faculty (department_id, faculty_id, faculty_name) VALUES (5, 2, 'Social Science')
+INSERT INTO member_faculty (department_id, faculty_id, faculty_name) VALUES (6, 3, 'Civil Aviation')
+INSERT INTO member_faculty (department_id, faculty_id, faculty_name) VALUES (7, 4, 'Arts')
+INSERT INTO member_faculty (department_id, faculty_id, faculty_name) VALUES (9, 5, 'Business and Administrative')
+
+INSERT INTO member_level (level_id, level_name) VALUES (1, 'Freshman')
+INSERT INTO member_level (level_id, level_name) VALUES (2, 'Sophomore')
+INSERT INTO member_level (level_id, level_name) VALUES (3, 'Junior')
+INSERT INTO member_level (level_id, level_name) VALUES (4, 'Senior')
+INSERT INTO member_level (level_id, level_name) VALUES (5, 'Master')
