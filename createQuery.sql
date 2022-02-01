@@ -206,6 +206,32 @@ INSERT INTO lectures (lecture_id, lecture_name, credit, lecture_hour) VALUES (14
 -- insert document
 
 INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (1, 100, 3, 'Beowulf', 'It’s the ideal postcolonial novel.', 180)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (2, 105, 3, 'The God of Small Things', 'English literature works, including poems, embody such almost straightforward characters', 395)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (3, 105, 3, 'Beloved', 'Beloved is one of the greatest novels ever written – in any language or culture, any genre or generation, any time or clime.', 269)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (4, 102, 3, 'Calculus', 'Introduction to the Calculus, world of Math!', 173)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (5, 103, 1, 'MS Office Tools', 'Brief explanantions to use ms office word, excel and powerpoint.', 196)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (6, 116, 1, 'DSA with Java 13', 'Great instructions to learn Data Structures.', 578)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (7, 131, 18, 'History of Architecture', 'Historical sides of Architecture and asethetics.', 379)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (8, 128, 1, 'Cyber Security', 'Usage of Kali Linux applications within explanantions.', 591)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (9, 128, 1, 'Adavnced Security', 'Usage of more advanced Kali Linux applications within explanantions.', 595)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (10, 140, 7, 'Architectural Principles in the Age of Humanism', 'Sir Kenneth Clark wrote in the Architectural Review, that the first result of this book was “to dispose, once and for all, of the hedonist, or purely aesthetic, theory of Renaissance architecture,’', 594)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (11, 138, 20, 'Statics and Strength of Materials', 'Fourth Edition, offers students an accessible, visually oriented introduction to structural theory that doesnt rely on calculus.', 256)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (12, 100, 15, 'A Beautiful Mind by Sylvia Nasar', 'This biography of esteemed mathematician John Nash was both a finalist for the 1998 Pulitzer Prize and the basis for the award-winning film of the same name.', 203)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (13, 100, 15, 'Alan Turing: The Enigma', 'Hodges’ 1983 biography of Alan Turing sheds light on the inner workings of this brilliant mathematician, cryptologist, and computer pioneer.', 482)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (14, 100, 15, 'Alexander Hamilton by Ron Chernow', 'Ron Chernow’s Alexander Hamilton is not only the inspiration for a hit Broadway musical, but also a work of creative genius itself. ', 546)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (15, 100, 15, 'Barracoon: The Story of the Last', 'A prolific essayist, short story writer, and novelist, Hurston turned her hand to biographical writing in 1927 ', 338)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (16, 100, 15, 'Churchill: A Life', 'Though many a biography of him has been attempted, Gilbert’s is the final authority on Winston Churchill', 219)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (17, 105, 15, 'Frida: A Biography', 'Herrera’s 1983 biography of renowned painter Frida Kahlo, one of the most recognizable names in modern art, has since become the definitive account on her life.', 137)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (18, 105, 15, 'Henrietta Lacks', 'The Immortal Life of Henrietta Lacks is about a woman whose cells completely changed the trajectory of modern medicine. Rebecca Skloot', 487)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (19, 134, 4, 'Green Arrow: Longbow', 'Longbow Hunters the Dark Knight Returns or Batman: Year One for Green Arrow.', 506)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (20, 134, 4, 'Gods and Mortals', 'Wonder Woman into the midst of the drama of the gods and puts her role as a Daughter of Themyscira at the forefront of her journey into the modern world. ', 265)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (21, 134, 4, 'The New Frontier', 'New Frontier is Darwyn Cooke’s love letter to the Gold and Silver ages of comics, telling a story that interweaves the fictional evolution of the characters post WW2 with the real-world crises from McCarthyism to Jim Crow.', 207)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (22, 134, 4, 'All-Star Superman', 'Grant Morrison’s Superman is possibly the best depiction of the character as Clark Kent faces his own mortality.', 433)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (23, 134, 4, 'Dark Knight Returns', 'If Morrison faced the unenviable task of writing a “last Superman story”, Miller’s task of crafting a “final” Batman story', 305)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (24, 134, 4, 'Kingdom Come', 'Kingdom Come takes that on directly, with a story that poses the question of whether or not there’s still a place in modern comics for characters like Superman or Batman.', 219)
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (25, 134, 4, 'Red Son', 'This Superman spin on the nature vs nurture debate looks at how the Man of Steel might have been a different hero with just a slight change in the trajectory of the Krypton escape vessel. Here, Superman grows up in Stalin’s Soviet Union, a fact that changes not just his life but ripples out into other heroes and villains across the DC universe. ', 619)
+
+
 
 -- insert member_lecture
 
