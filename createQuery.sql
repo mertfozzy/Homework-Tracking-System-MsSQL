@@ -76,9 +76,9 @@ CREATE TABLE document(
     document_id int NOT NULL,
     lecture_id int NOT NULL,
     type_no int NOT NULL,
-    title varchar NOT NULL,
+    title varchar(50) NOT NULL,
     content text,
-    doc_file bigint NOT NULL,
+    doc_file int NOT NULL,
     PRIMARY KEY (document_id),
     FOREIGN KEY (lecture_id) REFERENCES lectures(lecture_id),
     FOREIGN KEY (type_no) REFERENCES document_type(type_no)
@@ -202,3 +202,13 @@ INSERT INTO lectures (lecture_id, lecture_name, credit, lecture_hour) VALUES (13
 INSERT INTO lectures (lecture_id, lecture_name, credit, lecture_hour) VALUES (138, 'Building Statics', 4, 30)
 INSERT INTO lectures (lecture_id, lecture_name, credit, lecture_hour) VALUES (139, 'Construction', 4, 30)
 INSERT INTO lectures (lecture_id, lecture_name, credit, lecture_hour) VALUES (140, 'Historial Sites', 4, 30)
+
+-- insert document
+
+INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (1, 100, 3, 'Beowulf', 'It’s the ideal postcolonial novel.', 180)
+
+-- insert member_lecture
+
+-- insert member_document
+
+-- insert member
