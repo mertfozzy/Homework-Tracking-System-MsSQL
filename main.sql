@@ -384,3 +384,24 @@ INSERT INTO member_lecture (register_id, lecture_id, member_id) VALUES (5754, 14
 INSERT INTO member_lecture (register_id, lecture_id, member_id) VALUES (6342, 140, 4770230054)
 INSERT INTO member_lecture (register_id, lecture_id, member_id) VALUES (5557, 140, 7507020515)
 INSERT INTO member_lecture (register_id, lecture_id, member_id) VALUES (5526, 136, 5786286814)
+
+ 
+
+INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (6404, 12129, 3226312503, '2022-03-04 01:54:43')
+INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (7076, 16380, 8735078753, '2022-10-06 05:58:14')
+INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (3322, 17917, 8460231045, '2022-07-19 01:21:01')
+INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (8017, 17617, 5194120039, '2021-11-20 16:22:28')
+INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (6682, 18699, 8331146995, '2022-06-15 01:00:39')
+INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (5644, 14917, 9597819056, '2021-12-10 00:57:38')
+INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (2004, 12696, 6565707190, '2022-05-12 19:44:03')
+INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (1406, 13201, 4699969065, '2021-12-19 11:58:47')
+INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (4345, 19700, 9329508482, '2022-08-14 18:20:15')
+INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (8145, 14096, 6334470199, '2022-08-03 16:09:28')
+INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (2762, 18784, 3480210889, '2022-11-03 03:36:05')
+INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (6514, 13420, 4399357258, '2022-03-04 01:54:43')
+INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (8029, 14321, 7428141664, '2022-09-12 09:37:14')
+INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (5760, 14259, 8489076193, '2022-08-03 16:09:28')
+INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (9717, 18490, 3850108294, '2022-08-14 18:20:15')
+INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (5583, 17266, 9208636932, '2022-11-03 03:36:05')
+INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (1898, 10109, 3256254161, '2022-09-12 09:37:14')
+
