@@ -412,3 +412,5 @@ INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VA
 --4- SELECT * FROM lectures FULL OUTER JOIN member_lecture ON member_lecture.lecture_id = lectures.lecture_id 
 --5- SELECT * FROM document RIGHT JOIN lectures ON lectures.lecture_id = document.lecture_id
 --6- SELECT * FROM member WHERE level_id>2 AND faculty_id=1 ORDER BY lastname, username
+--7- SELECT member_id, username, lastname, date_of_birth FROM member ORDER BY date_of_birth desc
+--8- SELECT faculty_id, COUNT(*) AS 'Number of Currently Students' FROM member WHERE level_id<5 GROUP BY faculty_id
