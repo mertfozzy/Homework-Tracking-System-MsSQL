@@ -106,6 +106,7 @@ CREATE TABLE member_messages(
     PRIMARY KEY (message_id)
 );
 
+/*
 --insert department
 INSERT INTO department (department_id, department_name) VALUES (1, 'Computer Engineering')
 INSERT INTO department (department_id, department_name) VALUES (2, 'Software Engineering')
@@ -256,30 +257,31 @@ INSERT INTO member_lecture (member_id, lecture_id) VALUES (8, 113)
 
 -- insert member_document
 INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (500, 1, 90, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (501, 2, 93, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (502, 3, 56, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (503, 4, 48, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (504, 5, 63, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (505, 6, 66, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (506, 7, 12, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (507, 8, 96, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (508, 9, 98, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (509, 10, 99, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (510, 11, 100, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (511, 12, 52, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (512, 13, 55, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (513, 14, 30, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (514, 15, 90, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (515, 16, 91, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (516, 17, 91, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (517, 18, 89, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (518, 19, 88, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (519, 20, 98, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (520, 21, 97, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (521, 22, 22, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (522, 23, 23, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (523, 24, 33, 1)
-INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (524, 25, 44, 1)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (501, 2, 93, 2)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (502, 3, 56, 3)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (503, 4, 48, 4)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (504, 5, 63, 5)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (505, 6, 66, 6)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (506, 7, 12, 7)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (507, 8, 96, 8)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (508, 9, 98, 9)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (509, 10, 99, 10)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (510, 11, 100, 11)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (511, 12, 52, 12)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (512, 13, 55, 13)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (513, 14, 30, 14)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (514, 15, 90, 15)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (515, 16, 91, 16)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (516, 17, 91, 17)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (517, 18, 89, 18)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (518, 19, 88, 19)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (519, 20, 98, 20)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (520, 21, 97, 21)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (521, 22, 22, 22)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (522, 23, 23, 23)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (523, 24, 33, 24)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (524, 25, 44, 25)
+
 
 -- insert member
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
@@ -371,3 +373,4 @@ INSERT INTO member (member_id, username, lastname, member_password, faculty_id, 
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
 	30, 'Emre', 'Aydın', 'emreaydin', 2, 4, 129, 'emreaayd@gmail.com', 'Kemah', '841152053',  '1958-06-01', 'Turkey', 'Erzincan')
+*/
