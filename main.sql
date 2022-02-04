@@ -103,3 +103,32 @@ CREATE TABLE member_messages(
     message_ip int,
     PRIMARY KEY (message_id)
 );
+
+/*
+INSERT INTO member_faculty (faculty_id, faculty_name) VALUES (1, 'Engineering')
+INSERT INTO member_faculty (faculty_id, faculty_name) VALUES (2, 'Logistics')
+INSERT INTO member_faculty (faculty_id, faculty_name) VALUES (3, 'Art & Culture')
+INSERT INTO member_faculty (faculty_id, faculty_name) VALUES (4, 'Social Sciences')
+INSERT INTO member_faculty (faculty_id, faculty_name) VALUES (5, 'Aviation')
+*/
+/*
+INSERT INTO department (department_id, department_name, faculty_id) VALUES (124862, 'Computer Engineering', 1)
+INSERT INTO department (department_id, department_name, faculty_id) VALUES (145578, 'Software Engineering', 1)
+INSERT INTO department (department_id, department_name, faculty_id) VALUES (122932, 'Industrial Engineering', 1)
+INSERT INTO department (department_id, department_name, faculty_id) VALUES (137485, 'Architecture', 1)
+
+INSERT INTO department (department_id, department_name, faculty_id) VALUES (179493, 'Management', 2)
+INSERT INTO department (department_id, department_name, faculty_id) VALUES (167972, 'Logistics', 2)
+INSERT INTO department (department_id, department_name, faculty_id) VALUES (172196, 'Finance', 2)
+
+INSERT INTO department (department_id, department_name, faculty_id) VALUES (127234, 'Animation', 3)
+INSERT INTO department (department_id, department_name, faculty_id) VALUES (104225, 'Game Design', 3)
+INSERT INTO department (department_id, department_name, faculty_id) VALUES (173519, 'Graphic Design', 3)
+INSERT INTO department (department_id, department_name, faculty_id) VALUES (185264, 'Advertising', 3)
+INSERT INTO department (department_id, department_name, faculty_id) VALUES (185265, 'Radio & Television', 3)
+
+INSERT INTO department (department_id, department_name, faculty_id) VALUES (120076, 'Psychology', 4)
+INSERT INTO department (department_id, department_name, faculty_id) VALUES (181544, 'Politics', 4)
+
+INSERT INTO department (department_id, department_name, faculty_id) VALUES (187888, 'Aviation Management', 5)
+*/
