@@ -111,6 +111,7 @@ INSERT INTO member_faculty (faculty_id, faculty_name) VALUES (3, 'Art & Culture'
 INSERT INTO member_faculty (faculty_id, faculty_name) VALUES (4, 'Social Sciences')
 INSERT INTO member_faculty (faculty_id, faculty_name) VALUES (5, 'Aviation')
 */
+
 /*
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (124862, 'Computer Engineering', 1)
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (145578, 'Software Engineering', 1)
@@ -131,4 +132,12 @@ INSERT INTO department (department_id, department_name, faculty_id) VALUES (1200
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (181544, 'Politics', 4)
 
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (187888, 'Aviation Management', 5)
+*/
+
+/*
+INSERT INTO member_level (level_id, level_name) VALUES (1, 'Freshman')
+INSERT INTO member_level (level_id, level_name) VALUES (2, 'Sophomore')
+INSERT INTO member_level (level_id, level_name) VALUES (3, 'Junior')
+INSERT INTO member_level (level_id, level_name) VALUES (4, 'Senior')
+INSERT INTO member_level (level_id, level_name) VALUES (5, 'Master')
 */
