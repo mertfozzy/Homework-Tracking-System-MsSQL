@@ -374,7 +374,7 @@ INSERT INTO member_lecture (register_id, lecture_id, member_id) VALUES (3329, 11
 INSERT INTO member_lecture (register_id, lecture_id, member_id) VALUES (6587, 132, 3256254161)
 INSERT INTO member_lecture (register_id, lecture_id, member_id) VALUES (6330, 117, 4103382027)
 INSERT INTO member_lecture (register_id, lecture_id, member_id) VALUES (4845, 125, 6141278778)
-INSERT INTO member_lecture (register_id, lecture_id, member_id) VALUES (5557, 125, 4854997479)
+INSERT INTO member_lecture (register_id, lecture_id, member_id) VALUES (5567, 125, 4854997479)
 INSERT INTO member_lecture (register_id, lecture_id, member_id) VALUES (3158, 132, 7379626747)
 INSERT INTO member_lecture (register_id, lecture_id, member_id) VALUES (4828, 130, 9878711422)
 INSERT INTO member_lecture (register_id, lecture_id, member_id) VALUES (6619, 117, 7085078317)
