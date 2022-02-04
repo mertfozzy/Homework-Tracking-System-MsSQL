@@ -31,7 +31,7 @@ CREATE TABLE member(
 	member_password varchar(20),
 	faculty_id int,
 	level_id int,
-    phone int,
+    phone bigint,
     mail nvarchar(255),
     adress text,
     tc_identity_num bigint UNIQUE,
