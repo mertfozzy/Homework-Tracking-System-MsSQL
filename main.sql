@@ -89,7 +89,7 @@ CREATE TABLE member_document(
     member_doc_id int NOT NULL,
     document_id int,
     score int,
-    member_id int,
+    member_id bigint,
     PRIMARY KEY (member_doc_id),
     FOREIGN KEY (document_id) REFERENCES document(document_id)
 );
