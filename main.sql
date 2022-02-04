@@ -104,7 +104,7 @@ CREATE TABLE member_messages(
 	FOREIGN KEY (member_id) REFERENCES member(member_id)
 );
 
-
+/*
 INSERT INTO member_faculty (faculty_id, faculty_name) VALUES (1, 'Engineering')
 INSERT INTO member_faculty (faculty_id, faculty_name) VALUES (2, 'Logistics')
 INSERT INTO member_faculty (faculty_id, faculty_name) VALUES (3, 'Art & Culture')
@@ -404,9 +404,11 @@ INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VA
 INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (9717, 18490, 3850108294, '2022-08-14 18:20:15')
 INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (5583, 17266, 9208636932, '2022-11-03 03:36:05')
 INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (1898, 10109, 3256254161, '2022-09-12 09:37:14')
+*/
 
---SELECT member_id, username, lastname FROM member ORDER BY username ASC
---SELECT member.member_id, member.username, member.lastname FROM member LEFT JOIN member_lecture ON member_lecture.member_id = member.member_id
---SELECT * FROM member FULL OUTER JOIN member_messages ON member_messages.member_id = member.member_id
---SELECT * FROM lectures FULL OUTER JOIN member_lecture ON member_lecture.lecture_id = lectures.lecture_id 
---SELECT * FROM document RIGHT JOIN lectures ON lectures.lecture_id = document.lecture_id
+--1- SELECT member_id, username, lastname FROM member ORDER BY username ASC
+--2- SELECT member.member_id, member.username, member.lastname FROM member LEFT JOIN member_lecture ON member_lecture.member_id = member.member_id
+--3- SELECT * FROM member FULL OUTER JOIN member_messages ON member_messages.member_id = member.member_id
+--4- SELECT * FROM lectures FULL OUTER JOIN member_lecture ON member_lecture.lecture_id = lectures.lecture_id 
+--5- SELECT * FROM document RIGHT JOIN lectures ON lectures.lecture_id = document.lecture_id
+--6- SELECT * FROM member WHERE level_id>2 AND faculty_id=1 ORDER BY lastname, username
