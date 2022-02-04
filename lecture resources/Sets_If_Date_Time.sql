@@ -1,21 +1,21 @@
-/*INSERT INTO workers
+INSERT INTO workers
 	SELECT BusinessEntityID, FirstName, LastName FROM Person.Person
 	WHERE Suffix IS NOT NULL
 
 Select W_ID, W_FirstName, W_LastName from workers
 UNION ALL
-Select BusinessEntityID, FirstName, LastName from Person.Person --Union iki tabledaki verileri birleþtirir ayný olaný
-																	--bir kere yazdýrýr. ALL da hepsini yazdýrýr
+Select BusinessEntityID, FirstName, LastName from Person.Person --Union iki tabledaki verileri birleï¿½tirir aynï¿½ olanï¿½
+																	--bir kere yazdï¿½rï¿½r. ALL da hepsini yazdï¿½rï¿½r
 
 
 Select BusinessEntityID, FirstName, LastName from Person.Person
 INTERSECT
-Select W_ID, W_FirstName, W_LastName from workers --Kesiþimlerini alýr
+Select W_ID, W_FirstName, W_LastName from workers --Kesiï¿½imlerini alï¿½r
 
 
 Select BusinessEntityID, FirstName, LastName from Person.Person
 EXCEPT
-Select W_ID, W_FirstName, W_LastName from workers --Hepsini al, kesiþimi çýkar
+Select W_ID, W_FirstName, W_LastName from workers --Hepsini al, kesiï¿½imi ï¿½ï¿½kar
 
 
 Select BusinessEntityID, FirstName, LastName from Person.Person
@@ -28,7 +28,7 @@ Select SalesReasonID, Name, ReasonType from Sales.SalesReason
 Select BusinessEntityID, FirstName, LastName from Person.Person
 INTERSECT
 Select W_ID, W_FirstName, W_LastName AS LN from workers
- -- Aþaðýdaki üsttekinin aynýsý
+ -- Aï¿½aï¿½ï¿½daki ï¿½sttekinin aynï¿½sï¿½
 Select BusinessEntityID, FirstName, LastName from Person.Person
 Where BusinessEntityID IN
 	(Select W_ID from workers)
@@ -37,7 +37,7 @@ Where BusinessEntityID IN
 Select BusinessEntityID, FirstName, LastName from Person.Person
 Except
 Select W_ID, W_FirstName, W_LastName AS LN from workers
--- Üstteki alttakinin aynýsý
+-- ï¿½stteki alttakinin aynï¿½sï¿½
 Select BusinessEntityID, FirstName, LastName from Person.Person
 Where BusinessEntityID NOT IN
 	(Select W_ID from workers)
@@ -46,9 +46,9 @@ update workers set W_ID += (select MAX(SalesReasonID) from Sales.SalesReason)
 	where W_ID IN (Select BusinessEntityID FROM Person.Person) -- W_ID + SalesReason(MAX) if worker is in Person.Person
 
 
-SELECT W_ID, W_FirstName, W_LastName, GETDATE() AS NaNe from workers --SERVER tarihini bastýr
+SELECT W_ID, W_FirstName, W_LastName, GETDATE() AS NaNe from workers --SERVER tarihini bastï¿½r
 
-SELECT year(OrderDate) from Sales.SalesOrderHeader --month aylarý bastýrýr
+SELECT year(OrderDate) from Sales.SalesOrderHeader --month aylarï¿½ bastï¿½rï¿½r
 
 
 Select month(OrderDate) as MonthOfTheYear, count(*) as Total
@@ -57,18 +57,17 @@ Select month(OrderDate) as MonthOfTheYear, count(*) as Total
 	order by count(*) DESC
 
 
-Select OrderDate, DATEADD(month, 3, OrderDate) AS DueDate from Sales.SalesOrderHeader -- orderdate i 3 ay arrtýrýyorsun
+Select OrderDate, DATEADD(month, 3, OrderDate) AS DueDate from Sales.SalesOrderHeader -- orderdate i 3 ay arrtï¿½rï¿½yorsun
 																						--month day de olabilir
 
 
 
-select DateDiff( month, '2000-08-22', Getdate()) -- elemanýn kaç aylýk olduðnu yazdýrýr (month yerinde day de olur)
+select DateDiff( month, '2000-08-22', Getdate()) -- elemanï¿½n kaï¿½ aylï¿½k olduï¿½nu yazdï¿½rï¿½r (month yerinde day de olur)
 
 
 
 
 Select OrderDate, DATEADD(day,3800, OrderDate) AS DueDate,
 	datediff (day,OrderDate,getdate()) as DaysPassed
-	from Sales.SalesOrderHeader -- due date'ten bu yana kaç gün geçtiðini gördük
+	from Sales.SalesOrderHeader -- due date'ten bu yana kaï¿½ gï¿½n geï¿½tiï¿½ini gï¿½rdï¿½k
 
-*/
