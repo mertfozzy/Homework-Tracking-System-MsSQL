@@ -106,15 +106,15 @@ CREATE TABLE member_messages(
     PRIMARY KEY (message_id)
 );
 
-/*
+
 INSERT INTO member_faculty (faculty_id, faculty_name) VALUES (1, 'Engineering')
 INSERT INTO member_faculty (faculty_id, faculty_name) VALUES (2, 'Logistics')
 INSERT INTO member_faculty (faculty_id, faculty_name) VALUES (3, 'Art & Culture')
 INSERT INTO member_faculty (faculty_id, faculty_name) VALUES (4, 'Social Sciences')
 INSERT INTO member_faculty (faculty_id, faculty_name) VALUES (5, 'Aviation')
-*/
 
-/*
+
+
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (124862, 'Computer Engineering', 1)
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (145578, 'Software Engineering', 1)
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (122932, 'Industrial Engineering', 1)
@@ -130,17 +130,17 @@ INSERT INTO department (department_id, department_name, faculty_id) VALUES (1852
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (120076, 'Psychology', 4)
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (181544, 'Politics', 4)
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (187888, 'Aviation Management', 5)
-*/
 
-/*
+
+
 INSERT INTO member_level (level_id, level_name) VALUES (1, 'Freshman')
 INSERT INTO member_level (level_id, level_name) VALUES (2, 'Sophomore')
 INSERT INTO member_level (level_id, level_name) VALUES (3, 'Junior')
 INSERT INTO member_level (level_id, level_name) VALUES (4, 'Senior')
 INSERT INTO member_level (level_id, level_name) VALUES (5, 'Master')
-*/
 
-/*
+
+
 INSERT INTO lectures (lecture_id, lecture_name, credit, lecture_hour) VALUES (100, 'English I', 4, 30)
 INSERT INTO lectures (lecture_id, lecture_name, credit, lecture_hour) VALUES (101, 'Physics I', 4, 30)
 INSERT INTO lectures (lecture_id, lecture_name, credit, lecture_hour) VALUES (102, 'Calculus I', 4, 30)
@@ -182,9 +182,9 @@ INSERT INTO lectures (lecture_id, lecture_name, credit, lecture_hour) VALUES (13
 INSERT INTO lectures (lecture_id, lecture_name, credit, lecture_hour) VALUES (138, 'Building Statics', 4, 30)
 INSERT INTO lectures (lecture_id, lecture_name, credit, lecture_hour) VALUES (139, 'Construction', 4, 30)
 INSERT INTO lectures (lecture_id, lecture_name, credit, lecture_hour) VALUES (140, 'Historial Sites', 4, 30)
-*/
 
-/*
+
+
 INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (134, 'Computer Science', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
 INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (186, 'Action and Adventure', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
 INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (118, 'Classics', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
@@ -205,9 +205,9 @@ INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALU
 INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (136, 'Essays', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
 INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (183, 'History', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
 INSERT INTO document_type (type_no, doc_type_name, start_time, finish_time) VALUES (171, 'Memoir', '2022-01-31 10:00:00', '2022-02-20 10:00:00')
-*/
 
-/*
+
+
 INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (10709, 100, 118, 'Beowulf', 'It’s the ideal postcolonial novel.', 180)
 INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (18431, 106, 118, 'The God of Small Things', 'English literature works, including poems, embody such almost straightforward characters', 395)
 INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (17993, 105, 118, 'Beloved', 'Beloved is one of the greatest novels ever written – in any language or culture, any genre or generation, any time or clime.', 269)
@@ -233,7 +233,7 @@ INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file
 INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (11597, 105, 189, 'Dark Knight Returns', 'If Morrison faced the unenviable task of writing a “last Superman story”, Miller’s task of crafting a “final” Batman story', 305)
 INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (14842, 105, 189, 'Kingdom Come', 'Kingdom Come takes that on directly, with a story that poses the question of whether or not there’s still a place in modern comics for characters like Superman or Batman.', 219)
 INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (12222, 105, 189, 'Red Son', 'This Superman spin on the nature vs nurture debate looks at how the Man of Steel might have been a different hero with just a slight change in the trajectory of the Krypton escape vessel. Here, Superman grows up in Stalin’s Soviet Union, a fact that changes not just his life but ripples out into other heroes and villains across the DC universe. ', 619)
-*/
+
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
 	1, 'Mert', 'Altuntaş', 'mert2000', 1, 3, 5908775906, 'mertfozzy@gmail.com', 'Ümraniye', '59395324628',  '2000-03-19', 'Turkey', 'İstanbul')
