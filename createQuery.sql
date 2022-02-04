@@ -66,7 +66,6 @@ CREATE TABLE document_type(
 CREATE TABLE member_lecture(
     member_id int NOT NULL,
     lecture_id int NOT NULL,
-    PRIMARY KEY (member_id),
     FOREIGN KEY (member_id) REFERENCES member(member_id),
     FOREIGN KEY (lecture_id) REFERENCES lectures(lecture_id) 
 );
@@ -225,9 +224,35 @@ INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file
 INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (24, 134, 4, 'Kingdom Come', 'Kingdom Come takes that on directly, with a story that poses the question of whether or not there’s still a place in modern comics for characters like Superman or Batman.', 219)
 INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (25, 134, 4, 'Red Son', 'This Superman spin on the nature vs nurture debate looks at how the Man of Steel might have been a different hero with just a slight change in the trajectory of the Krypton escape vessel. Here, Superman grows up in Stalin’s Soviet Union, a fact that changes not just his life but ripples out into other heroes and villains across the DC universe. ', 619)
 
-
-
 -- insert member_lecture
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (1, 100)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (1, 102)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (1, 103)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (1, 104)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (2, 134)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (2, 132)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (2, 121)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (2, 112)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (3, 114)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (3, 125)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (3, 116)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (3, 115)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (4, 114)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (4, 125)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (5, 130)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (5, 131)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (6, 120)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (6, 121)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (6, 122)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (6, 140)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (6, 131)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (6, 132)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (7, 101)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (7, 102)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (7, 103)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (8, 111)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (8, 112)
+INSERT INTO member_lecture (member_id, lecture_id) VALUES (8, 113)
 
 -- insert member_document
 INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (500, 1, 90, 1)
