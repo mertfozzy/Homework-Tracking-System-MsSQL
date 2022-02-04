@@ -63,8 +63,10 @@ CREATE TABLE document_type(
 
 --member lecture
 CREATE TABLE member_lecture(
+	register_id int,
     member_id int,
     lecture_id int,
+	PRIMARY KEY (register_id),
     FOREIGN KEY (member_id) REFERENCES member(member_id),
     FOREIGN KEY (lecture_id) REFERENCES lectures(lecture_id) 
 );
@@ -117,20 +119,16 @@ INSERT INTO department (department_id, department_name, faculty_id) VALUES (1248
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (145578, 'Software Engineering', 1)
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (122932, 'Industrial Engineering', 1)
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (137485, 'Architecture', 1)
-
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (179493, 'Management', 2)
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (167972, 'Logistics', 2)
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (172196, 'Finance', 2)
-
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (127234, 'Animation', 3)
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (104225, 'Game Design', 3)
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (173519, 'Graphic Design', 3)
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (185264, 'Advertising', 3)
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (185265, 'Radio & Television', 3)
-
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (120076, 'Psychology', 4)
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (181544, 'Politics', 4)
-
 INSERT INTO department (department_id, department_name, faculty_id) VALUES (187888, 'Aviation Management', 5)
 */
 
@@ -236,3 +234,4 @@ INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file
 INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (14842, 105, 189, 'Kingdom Come', 'Kingdom Come takes that on directly, with a story that poses the question of whether or not there’s still a place in modern comics for characters like Superman or Batman.', 219)
 INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file) VALUES (12222, 105, 189, 'Red Son', 'This Superman spin on the nature vs nurture debate looks at how the Man of Steel might have been a different hero with just a slight change in the trajectory of the Krypton escape vessel. Here, Superman grows up in Stalin’s Soviet Union, a fact that changes not just his life but ripples out into other heroes and villains across the DC universe. ', 619)
 */
+
