@@ -98,8 +98,6 @@ CREATE TABLE member_document(
 CREATE TABLE member_messages(
     message_id bigint NOT NULL,
     member_id bigint,
-    title varchar(50),
-    content text,
     message_date datetime2 ,
     message_ip int,
     PRIMARY KEY (message_id),
@@ -236,91 +234,91 @@ INSERT INTO document (document_id, lecture_id, type_no, title, content, doc_file
 
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	1, 'Mert', 'Altuntaş', 'mert2000', 1, 3, 5908775906, 'mertfozzy@gmail.com', 'Ümraniye', '59395324628',  '2000-03-19', 'Turkey', 'İstanbul')
+	3226312503, 'Mert', 'Altuntaş', 'mert2000', 1, 3, 5908775906, 'mertfozzy@gmail.com', 'Ümraniye', '59395324628',  '2000-03-19', 'Turkey', 'İstanbul')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	2, 'Nur Selin', 'İçke', 'selin32', 2, 4, 5109335144, 'nurselin@gmail.com', 'Edremit', '76548161480',  '2000-06-27', 'Turkey', 'Balıkesir')
+	8735078753, 'Nur Selin', 'İçke', 'selin32', 2, 4, 5109335144, 'nurselin@gmail.com', 'Edremit', '76548161480',  '2000-06-27', 'Turkey', 'Balıkesir')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	3, 'Adem Onur', 'Öztaş', 'rickmorty', 1, 3, 5450041830, 'onuroztas@gmail.com', 'Beşiktaş', '26081626090',  '2000-03-06', 'Turkey', 'İstanbul')
+	8460231045, 'Adem Onur', 'Öztaş', 'rickmorty', 1, 3, 5450041830, 'onuroztas@gmail.com', 'Beşiktaş', '26081626090',  '2000-03-06', 'Turkey', 'İstanbul')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	4, 'Alperen', 'Demirtürkoğlu', 'password', 1, 3, 5974179454, 'alpdmr@gmail.com', 'Üsküdar', '27546036294',  '2000-12-08', 'Turkey', 'İstanbul')
+	5194120039, 'Alperen', 'Demirtürkoğlu', 'password', 1, 3, 5974179454, 'alpdmr@gmail.com', 'Üsküdar', '27546036294',  '2000-12-08', 'Turkey', 'İstanbul')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	5, 'Gamze', 'Şen', 'fuzzylogic', 3, 2, 5323212128, 'gamzesn@gmail.com', 'Ümraniye', '64784384688',  '2001-04-18', 'Turkey', 'İstanbul')
+	8331146995, 'Gamze', 'Şen', 'fuzzylogic', 3, 2, 5323212128, 'gamzesn@gmail.com', 'Ümraniye', '64784384688',  '2001-04-18', 'Turkey', 'İstanbul')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	6, 'Serra', 'Yıldız', 'serrosko', 1, 1, 5741520772, 'serrrayldz@gmail.com', 'Eyüp', '92935276834',  '2002-04-12', 'Turkey', 'İstanbul')
+	9597819056, 'Serra', 'Yıldız', 'serrosko', 1, 1, 5741520772, 'serrrayldz@gmail.com', 'Eyüp', '92935276834',  '2002-04-12', 'Turkey', 'İstanbul')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	7, 'Ahmet', 'Kaya', 'randomgen', 2, 4, 5104261035, 'ahmetkaya@gmail.com', 'Beyoğlu', '83212220640',  '1964-03-22', 'Turkey', 'İstanbul')
+	6565707190, 'Ahmet', 'Kaya', 'randomgen', 2, 4, 5104261035, 'ahmetkaya@gmail.com', 'Beyoğlu', '83212220640',  '1964-03-22', 'Turkey', 'İstanbul')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	8, 'Musa', 'Kadir', 'mihriban', 5, 2, 5222952558, 'musaerog@gmail.com', 'Ümraniye', '29902754132',  '1997-07-11', 'Turkey', 'İstanbul')
+	4699969065, 'Musa', 'Kadir', 'mihriban', 5, 2, 5222952558, 'musaerog@gmail.com', 'Ümraniye', '29902754132',  '1997-07-11', 'Turkey', 'İstanbul')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	9, 'Cevdet', 'Çelik', 'asifirat', 2, 2, 5360328972, 'cvdtbagca@gmail.com', 'Kadıköy', '31003259430',  '1989-03-19', 'Turkey', 'İstanbul')
+	9329508482, 'Cevdet', 'Çelik', 'asifirat', 2, 2, 5360328972, 'cvdtbagca@gmail.com', 'Kadıköy', '31003259430',  '1989-03-19', 'Turkey', 'İstanbul')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	10, 'İsmail', 'Çakır', 'iso4353', 2, 4, 5568345422, 'ismailckr@gmail.com', 'Enez', '35954452568',  '1975-03-19', 'Turkey', 'Edirne')
+	6334470199, 'İsmail', 'Çakır', 'iso4353', 2, 4, 5568345422, 'ismailckr@gmail.com', 'Enez', '35954452568',  '1975-03-19', 'Turkey', 'Edirne')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	11, 'Selda', 'Güzel', 'gfhfdgs', 5, 3, 5576631470, 'seldaaa@gmail.com', 'Suşehri', '80724761296',  '2000-03-19', 'Turkey', 'Sivas')
+	3480210889, 'Selda', 'Güzel', 'gfhfdgs', 5, 3, 5576631470, 'seldaaa@gmail.com', 'Suşehri', '80724761296',  '2000-03-19', 'Turkey', 'Sivas')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	12, 'Hilal', 'Özdemir', '32423', 4, 3, 5017897132, 'hilalozde@gmail.com', 'Üsküdar', '75139993028',  '2000-08-14', 'Turkey', 'İstanbul')
+	4399357258, 'Hilal', 'Özdemir', '32423', 4, 3, 5017897132, 'hilalozde@gmail.com', 'Üsküdar', '75139993028',  '2000-08-14', 'Turkey', 'İstanbul')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	13, 'Tolga', 'İlhan', 'sifresiz', 2, 1, 5723368070, 'haluktolga@gmail.com', 'Turhal', '12420842474',  '1977-03-24', 'Turkey', 'Tokat')
+	7428141664, 'Tolga', 'İlhan', 'sifresiz', 2, 1, 5723368070, 'haluktolga@gmail.com', 'Turhal', '12420842474',  '1977-03-24', 'Turkey', 'Tokat')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	14, 'İsmail', 'Altunsaray', '453462', 3, 4, 5281091091, 'altunsaray@gmail.com', 'Başakşehir', '70476116406',  '1976-12-16', 'Turkey', 'İstanbul')
+	8489076193, 'İsmail', 'Altunsaray', '453462', 3, 4, 5281091091, 'altunsaray@gmail.com', 'Başakşehir', '70476116406',  '1976-12-16', 'Turkey', 'İstanbul')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	15, 'Ed', 'Sheeran', 'makeitrain', 1, 2, 5270974484, 'edsheer@gmail.com', 'Shrine', '21664649176',  '1988-11-19', 'England', 'London')
+	3850108294, 'Ed', 'Sheeran', 'makeitrain', 1, 2, 5270974484, 'edsheer@gmail.com', 'Shrine', '21664649176',  '1988-11-19', 'England', 'London')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	16, 'Oğuz', 'Koç', 'ogiogiogi', 1, 4, 5142486471, 'ogi3245@gmail.com', 'Beşiktaş', '18992705988',  '1998-10-19', 'Turkey', 'İstanbul')
+	9208636932, 'Oğuz', 'Koç', 'ogiogiogi', 1, 4, 5142486471, 'ogi3245@gmail.com', 'Beşiktaş', '18992705988',  '1998-10-19', 'Turkey', 'İstanbul')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	17, 'Murat', 'Karahanlı', 'murti232', 5, 3, 5261709825, 'mmuratbz@gmail.com', 'Akçay', '83362806466',  '2000-09-19', 'Turkey', 'Balıkesir')
+	3256254161, 'Murat', 'Karahanlı', 'murti232', 5, 3, 5261709825, 'mmuratbz@gmail.com', 'Akçay', '83362806466',  '2000-09-19', 'Turkey', 'Balıkesir')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	18, 'Murat', 'Şahin', 'edis212', 1, 3, 5404690862, 'mrtt45@gmail.com', 'Ümraniye', '71023250314',  '2002-07-19', 'Turkey', 'İstanbul')
+	4103382027, 'Murat', 'Şahin', 'edis212', 1, 3, 5404690862, 'mrtt45@gmail.com', 'Ümraniye', '71023250314',  '2002-07-19', 'Turkey', 'İstanbul')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	19, 'Demet', 'Salih', 'intikam121', 3, 3, 5794428817, 'basicemail@gmail.com', 'Kadıköy', '25067748290',  '1968-06-19', 'Turkey', 'İstanbul')
+	6141278778, 'Demet', 'Salih', 'intikam121', 3, 3, 5794428817, 'basicemail@gmail.com', 'Kadıköy', '25067748290',  '1968-06-19', 'Turkey', 'İstanbul')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	20, 'Mustafa', 'Sandal', 'araba', 1, 3, 5325615763, 'musti32@gmail.com', 'Taksim', '40586586956',  '2000-03-19', 'Turkey', 'İstanbul')
+	4854997479, 'Mustafa', 'Sandal', 'araba', 1, 3, 5325615763, 'musti32@gmail.com', 'Taksim', '40586586956',  '2000-03-19', 'Turkey', 'İstanbul')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	21, 'Sabahattin', 'Altuntaş', 'karasabo', 5, 4, 5288230040, 'sebomert@gmail.com', 'Ümraniye', '12212301530',  '1976-11-12', 'Turkey', 'İstanbul')
+	7379626747, 'Sabahattin', 'Altuntaş', 'karasabo', 5, 4, 5288230040, 'sebomert@gmail.com', 'Ümraniye', '12212301530',  '1976-11-12', 'Turkey', 'İstanbul')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	22, 'Sevgi', 'Altuntaş', 'lovelife', 2, 2, 5520639851, 'sevgiiy@gmail.com', 'Ümraniye', '61167951376',  '1977-03-15', 'Turkey', 'İstanbul')
+	9878711422, 'Sevgi', 'Altuntaş', 'lovelife', 2, 2, 5520639851, 'sevgiiy@gmail.com', 'Ümraniye', '61167951376',  '1977-03-15', 'Turkey', 'İstanbul')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	23, 'Yıldız', 'Sinan', 'sinan554', 5, 3, 5633404902, 'deliyildiz@gmail.com', 'Çekmeköy', '46105669018',  '1986-01-22', 'Turkey', 'İstanbul')
+	7085078317, 'Yıldız', 'Sinan', 'sinan554', 5, 3, 5633404902, 'deliyildiz@gmail.com', 'Çekmeköy', '46105669018',  '1986-01-22', 'Turkey', 'İstanbul')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	24, 'Kenan', 'Birkan', 'poghsy', 5, 1, 5564393486, 'kenanknk@gmail.com', 'Ümraniye', '63674012076',  '1968-05-20', 'Turkey', 'İstanbul')
+	4599028862, 'Kenan', 'Birkan', 'poghsy', 5, 1, 5564393486, 'kenanknk@gmail.com', 'Ümraniye', '63674012076',  '1968-05-20', 'Turkey', 'İstanbul')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	25, 'Tarkan', 'Uçar', 'tartar67', 5, 1, 5762174837, 'megastar@gmail.com', 'Merkez', '98550710678',  '1974-03-13', 'Turkey', 'Erzincan')
+	8847080154, 'Tarkan', 'Uçar', 'tartar67', 5, 1, 5762174837, 'megastar@gmail.com', 'Merkez', '98550710678',  '1974-03-13', 'Turkey', 'Erzincan')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	26, 'Mücahit', 'Kaya', 'muco5671', 4, 2, 5369574314, 'mucaitt@gmail.com', 'Esenler', '64746330890',  '2000-08-11', 'Turkey', 'İstanbul')
+	4834768023, 'Mücahit', 'Kaya', 'muco5671', 4, 2, 5369574314, 'mucaitt@gmail.com', 'Esenler', '64746330890',  '2000-08-11', 'Turkey', 'İstanbul')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	27, 'Veysel', 'Aksin', 'veyselsql', 2, 1, 5166069592, 'lainnyone@gmail.com', 'Erciş', '77264014326',  '1988-09-09', 'Turkey', 'Van')
+	4088147978, 'Veysel', 'Aksin', 'veyselsql', 2, 1, 5166069592, 'lainnyone@gmail.com', 'Erciş', '77264014326',  '1988-09-09', 'Turkey', 'Van')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	28, 'Burcu', 'Kara', 'frontender', 2, 2, 5902676293, 'burcuke@gmail.com', 'Keçiören', '87625877842',  '1998-03-20', 'Turkey', 'Ankara')
+	4770230054, 'Burcu', 'Kara', 'frontender', 2, 2, 5902676293, 'burcuke@gmail.com', 'Keçiören', '87625877842',  '1998-03-20', 'Turkey', 'Ankara')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	29, 'Volkan', 'Dalga', 'cezjsıda', 2, 3, 5442126242, 'volkisanki@gmail.com', 'Hopa', '93997322712',  '1950-07-21', 'Turkey', 'Trabzon')
+	7507020515, 'Volkan', 'Dalga', 'cezjsıda', 2, 3, 5442126242, 'volkisanki@gmail.com', 'Hopa', '93997322712',  '1950-07-21', 'Turkey', 'Trabzon')
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
-	30, 'Emre', 'Aydın', 'emreaydin', 2, 4, 5794239206, 'emreaayd@gmail.com', 'Kemah', '17892270084',  '1958-06-01', 'Turkey', 'Erzincan')
+	5786286814, 'Emre', 'Aydın', 'emreaydin', 2, 4, 5794239206, 'emreaayd@gmail.com', 'Kemah', '17892270084',  '1958-06-01', 'Turkey', 'Erzincan')
