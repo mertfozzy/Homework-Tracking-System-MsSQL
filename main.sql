@@ -25,7 +25,7 @@ CREATE TABLE member_level(
 
 --main
 CREATE TABLE member(
-	member_id int UNIQUE NOT NULL,
+	member_id bigint UNIQUE NOT NULL,
 	username nvarchar(30),
 	lastname nvarchar(30),
 	member_password varchar(20),
@@ -64,7 +64,7 @@ CREATE TABLE document_type(
 --member lecture
 CREATE TABLE member_lecture(
 	register_id int,
-    member_id int,
+    member_id bigint,
     lecture_id int,
 	PRIMARY KEY (register_id),
     FOREIGN KEY (member_id) REFERENCES member(member_id),
@@ -97,13 +97,13 @@ CREATE TABLE member_document(
 --message
 CREATE TABLE member_messages(
     message_id bigint NOT NULL,
-    sender_id int ,
-    receiver_id int ,
+    member_id bigint,
     title varchar(50),
     content text,
     message_date datetime2 ,
     message_ip int,
-    PRIMARY KEY (message_id)
+    PRIMARY KEY (message_id),
+	FOREIGN KEY (member_id) REFERENCES member(member_id)
 );
 
 
