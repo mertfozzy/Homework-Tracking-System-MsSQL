@@ -322,3 +322,36 @@ INSERT INTO member (member_id, username, lastname, member_password, faculty_id, 
 
 INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
 	5786286814, 'Emre', 'Aydın', 'emreaydin', 2, 4, 5794239206, 'emreaayd@gmail.com', 'Kemah', '17892270084',  '1958-06-01', 'Turkey', 'Erzincan')
+
+
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (9570, 15686, 90, 3226312503)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (8321, 15686, 93, 8735078753)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (7622, 15686, 56, 8460231045)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (8905, 10127, 48, 5194120039)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (4204, 10127, 63, 8331146995)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (3841, 14981, 66, 9597819056)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (7206, 15501, 12, 6565707190)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (5117, 16108, 96, 4699969065)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (7524, 16108, 98, 9329508482)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (6873, 16108, 99, 6334470199)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (3849, 11597, 100, 3480210889)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (3084, 11597, 52, 4399357258)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (2927, 15501, 55, 7428141664)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (7231, 15501, 30, 8489076193)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (1492, 12456, 90, 3850108294)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (2162, 12456, 91, 9208636932)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (5420, 11597, 91, 3256254161)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (1279, 18870, 89, 4103382027)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (1623, 17176, 88, 6141278778)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (9656, 17176, 98, 4854997479)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (3442, 11597, 97, 7379626747)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (3331, 17176, 22, 9878711422)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (6240, 17176, 23, 7085078317)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (9616, 15501, 33, 4599028862)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (9851, 15501, 44, 8847080154)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (7343, 18870, 44, 4834768023)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (9040, 18870, 44, 4770230054)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (3237, 12222, 44, 7507020515)
+INSERT INTO member_document (member_doc_id, document_id, score, member_id) VALUES (8248, 12222, 44, 5786286814)
+
+
