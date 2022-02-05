@@ -450,3 +450,9 @@ SELECT COUNT(member_id), city FROM member GROUP BY city ORDER BY COUNT(member_id
 
 --15 joining 2 tables and grouping with lecture_id to see "how many students taking which lecture?"
 SELECT member_lecture.lecture_id, COUNT(member_id) AS 'Number of Current Students' FROM member_lecture JOIN lectures ON member_lecture.lecture_id=lectures.lecture_id  GROUP BY member_lecture.lecture_id 
+
+--16 left join to find, are there any messaging activity for a document
+SELECT * FROM member_document LEFT JOIN member_messages ON member_messages.member_id = member_document.member_id
+
+--17 a filter, finds the students who are taking a 1st or 2nd year course 
+SELECT member_id from member WHERE member_id IN (select member_id from member_lecture where lecture_id < 130)
