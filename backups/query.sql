@@ -1,0 +1,1 @@
+select member_id, username, lastname from member ORDER BY username ASC
