@@ -435,3 +435,15 @@ SELECT * FROM document FULL OUTER JOIN document_type ON document_type.type_no = 
 
 --10 right join to see the list of departments with the faculty names together
 SELECT * FROM department RIGHT JOIN member_faculty ON member_faculty.faculty_id = department.faculty_id
+
+--11 grouping faculties, according to students who come from İstanbul
+SELECT faculty_id, COUNT(*) AS 'Number of Students who from İstanbul' FROM member WHERE city like 'İ%' GROUP BY faculty_id
+
+--12 join to see student's scores (id and score come from different tables) 
+SELECT member.member_id, score FROM member_document JOIN member ON member.member_id = member_document.member_id
+
+--13 intersect 2 different tables (member_document & member_lecture)
+SELECT member_id FROM member_document INTERSECT select member_id from member_lecture ORDER BY member_id
+
+--14 grouping and ordering students according to their city
+SELECT COUNT(member_id), city FROM member GROUP BY city ORDER BY COUNT(member_id) DESC
