@@ -418,7 +418,7 @@ SELECT * FROM member FULL OUTER JOIN member_messages ON member_messages.member_i
 --4- full join to see which lecture have no students
 SELECT * FROM lectures FULL OUTER JOIN member_lecture ON member_lecture.lecture_id = lectures.lecture_id 
 
---5- full join to see which lecture have no documents (-or resources)
+--5- right join to see which lecture have no documents (-or resources)
 SELECT * FROM document RIGHT JOIN lectures ON lectures.lecture_id = document.lecture_id
 
 --6- ordering the student names which are going to 3th or 4th level Engineering classess. (level + faculty filter)
