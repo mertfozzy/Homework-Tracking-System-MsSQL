@@ -414,3 +414,5 @@ INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VA
 --6- SELECT * FROM member WHERE level_id>2 AND faculty_id=1 ORDER BY lastname, username
 --7- SELECT member_id, username, lastname, date_of_birth FROM member ORDER BY date_of_birth desc
 --8- SELECT faculty_id, COUNT(*) AS 'Number of Currently Students' FROM member WHERE level_id<5 GROUP BY faculty_id
+--9- SELECT * FROM document FULL OUTER JOIN document_type ON document_type.type_no = document.type_no
+--10 SELECT * FROM department RIGHT JOIN member_faculty ON member_faculty.faculty_id = department.faculty_id
