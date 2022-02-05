@@ -406,13 +406,32 @@ INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VA
 INSERT INTO member_messages (message_id, message_ip, member_id, message_date) VALUES (1898, 10109, 3256254161, '2022-09-12 09:37:14')
 */
 
---1- SELECT member_id, username, lastname FROM member ORDER BY username ASC
---2- SELECT member.member_id, member.username, member.lastname FROM member LEFT JOIN member_lecture ON member_lecture.member_id = member.member_id
---3- SELECT * FROM member FULL OUTER JOIN member_messages ON member_messages.member_id = member.member_id
---4- SELECT * FROM lectures FULL OUTER JOIN member_lecture ON member_lecture.lecture_id = lectures.lecture_id 
---5- SELECT * FROM document RIGHT JOIN lectures ON lectures.lecture_id = document.lecture_id
---6- SELECT * FROM member WHERE level_id>2 AND faculty_id=1 ORDER BY lastname, username
---7- SELECT member_id, username, lastname, date_of_birth FROM member ORDER BY date_of_birth desc
---8- SELECT faculty_id, COUNT(*) AS 'Number of Currently Students' FROM member WHERE level_id<5 GROUP BY faculty_id
---9- SELECT * FROM document FULL OUTER JOIN document_type ON document_type.type_no = document.type_no
---10 SELECT * FROM department RIGHT JOIN member_faculty ON member_faculty.faculty_id = department.faculty_id
+--1- ordering according to names
+SELECT member_id, username, lastname FROM member ORDER BY username ASC
+
+--2- left join from member lecture table (member id values)
+SELECT member.member_id, member.username, member.lastname FROM member LEFT JOIN member_lecture ON member_lecture.member_id = member.member_id
+
+--3- full join to see member's messaging status. NULLs are not using message (nothing send or receive)
+SELECT * FROM member FULL OUTER JOIN member_messages ON member_messages.member_id = member.member_id
+
+--4- full join to see which lecture have no students
+SELECT * FROM lectures FULL OUTER JOIN member_lecture ON member_lecture.lecture_id = lectures.lecture_id 
+
+--5- full join to see which lecture have no documents (-or resources)
+SELECT * FROM document RIGHT JOIN lectures ON lectures.lecture_id = document.lecture_id
+
+--6- ordering the student names which are going to 3th or 4th level Engineering classess. (level + faculty filter)
+SELECT * FROM member WHERE level_id>2 AND faculty_id=1 ORDER BY lastname, username
+
+--7- ordering students according to their birthdays
+SELECT member_id, username, lastname, date_of_birth FROM member ORDER BY date_of_birth desc
+
+--8- grouping currently students according to their faculties (how many students continues in which faculty?)
+SELECT faculty_id, COUNT(*) AS 'Number of Currently Students' FROM member WHERE level_id<5 GROUP BY faculty_id
+
+--9- full join to see which types of documents are not available
+SELECT * FROM document FULL OUTER JOIN document_type ON document_type.type_no = document.type_no
+
+--10 right join to see the list of departments with the faculty names together
+SELECT * FROM department RIGHT JOIN member_faculty ON member_faculty.faculty_id = department.faculty_id
