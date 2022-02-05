@@ -1,0 +1,10 @@
+--1- SELECT member_id, username, lastname FROM member ORDER BY username ASC
+--2- SELECT member.member_id, member.username, member.lastname FROM member LEFT JOIN member_lecture ON member_lecture.member_id = member.member_id
+--3- SELECT * FROM member FULL OUTER JOIN member_messages ON member_messages.member_id = member.member_id
+--4- SELECT * FROM lectures FULL OUTER JOIN member_lecture ON member_lecture.lecture_id = lectures.lecture_id 
+--5- SELECT * FROM document RIGHT JOIN lectures ON lectures.lecture_id = document.lecture_id
+--6- SELECT * FROM member WHERE level_id>2 AND faculty_id=1 ORDER BY lastname, username
+--7- SELECT member_id, username, lastname, date_of_birth FROM member ORDER BY date_of_birth desc
+--8- SELECT faculty_id, COUNT(*) AS 'Number of Currently Students' FROM member WHERE level_id<5 GROUP BY faculty_id
+--9- SELECT * FROM document FULL OUTER JOIN document_type ON document_type.type_no = document.type_no
+--10 SELECT * FROM department RIGHT JOIN member_faculty ON member_faculty.faculty_id = department.faculty_id
