@@ -462,3 +462,9 @@ SELECT member_id, username, lastname, date_of_birth, DATEDIFF(MONTH, date_of_bir
 
 --19 calculate student's ages, just show people whose ages between 20 and 30
 SELECT username, lastname, date_of_birth, DATEDIFF(MONTH, date_of_birth, GETDATE())/12 AS 'Age of Student' from member where (DATEDIFF(MONTH, date_of_birth, GETDATE())/12 BETWEEN 20 and 30)
+
+--20 calculates how many days have passed since the message was sent
+SELECT message_id, message_date,  DATEDIFF(DAY, message_date, GETDATE()) AS 'Day Passed' from member_messages
+
+--21 finds the passwords which are not contains at least 8 characters
+SELECT username, lastname, member_password from member where len(member_password) < 8 
