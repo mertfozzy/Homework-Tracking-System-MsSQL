@@ -477,3 +477,6 @@ SELECT member_messages.member_id, message_id from member_messages RIGHT JOIN mem
 
 --24 left join to see levels of students who live in Ümraniye
 SELECT username, lastname, adress, member.level_id from member LEFT JOIN member_level ON member_level.level_id = member.level_id where adress like 'Ümraniye'
+
+--25 inner join to see types of documents with their names
+SELECT document.type_no, document_id, title from document INNER JOIN document_type ON document_type.type_no = document.type_no ORDER BY type_no
