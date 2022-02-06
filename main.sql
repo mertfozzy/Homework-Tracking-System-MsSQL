@@ -459,3 +459,6 @@ SELECT member_id from member WHERE member_id IN (select member_id from member_le
 
 --18 datediff function to calculate student's ages from their birthday
 SELECT member_id, username, lastname, date_of_birth, DATEDIFF(MONTH, date_of_birth, GETDATE())/12 AS 'Age of Student' from member 
+
+--19 calculate student's ages, just show people whose ages between 20 and 30
+SELECT username, lastname, date_of_birth, DATEDIFF(MONTH, date_of_birth, GETDATE())/12 AS 'Age of Student' from member where (DATEDIFF(MONTH, date_of_birth, GETDATE())/12 BETWEEN 20 and 30)
