@@ -456,3 +456,6 @@ SELECT * FROM member_document LEFT JOIN member_messages ON member_messages.membe
 
 --17 a filter, finds the students who are taking a 1st or 2nd year course 
 SELECT member_id from member WHERE member_id IN (select member_id from member_lecture where lecture_id < 130)
+
+--18 datediff function to calculate student's ages from their birthday
+SELECT member_id, username, lastname, date_of_birth, DATEDIFF(MONTH, date_of_birth, GETDATE())/12 AS 'Age of Student' from member 
