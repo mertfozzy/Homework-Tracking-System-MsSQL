@@ -474,3 +474,6 @@ SELECT member_document.member_id, score from member_document where score > 70 OR
 
 --23 right join to see students who are not messaging about any lecture
 SELECT member_messages.member_id, message_id from member_messages RIGHT JOIN member_lecture ON member_lecture.member_id = member_messages.member_id
+
+--24 left join to see levels of students who live in Ümraniye
+SELECT username, lastname, adress, member.level_id from member LEFT JOIN member_level ON member_level.level_id = member.level_id where adress like 'Ümraniye'
