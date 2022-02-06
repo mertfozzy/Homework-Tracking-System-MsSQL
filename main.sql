@@ -471,3 +471,6 @@ SELECT username, lastname, member_password from member where len(member_password
 
 --22 finds the students who passed (higher than 70 scores) and orders by score
 SELECT member_document.member_id, score from member_document where score > 70 ORDER BY score
+
+--23 right join to see students who are not messaging about any lecture
+SELECT member_messages.member_id, message_id from member_messages RIGHT JOIN member_lecture ON member_lecture.member_id = member_messages.member_id
