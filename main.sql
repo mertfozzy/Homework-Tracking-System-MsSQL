@@ -480,3 +480,10 @@ SELECT username, lastname, adress, member.level_id from member LEFT JOIN member_
 
 --25 inner join to see types of documents with their names
 SELECT document.type_no, document_id, title from document INNER JOIN document_type ON document_type.type_no = document.type_no ORDER BY type_no
+
+--UPDATES
+UPDATE member SET member_password = 'admin123' where member_id = 3226312503
+UPDATE document SET title = 'The Great Gatsby' where document_id = 10709
+UPDATE lectures SET credit = 5 where lecture_id between 120 and 130
+UPDATE document_type SET finish_time = '2022-03-19 21:00:00' where doc_type_name = 'Finance'
+UPDATE member SET faculty_id = 3 where phone = 5520639851
