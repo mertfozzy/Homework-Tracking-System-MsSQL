@@ -487,3 +487,7 @@ UPDATE document SET title = 'The Great Gatsby' where document_id = 10709
 UPDATE lectures SET credit = 5 where lecture_id between 120 and 130
 UPDATE document_type SET finish_time = '2022-03-19 21:00:00' where doc_type_name = 'Finance'
 UPDATE member SET faculty_id = 3 where phone = 5520639851
+
+--DELETES
+DELETE FROM member_messages WHERE message_id = 9717
+DELETE FROM document_type WHERE type_no = 174
