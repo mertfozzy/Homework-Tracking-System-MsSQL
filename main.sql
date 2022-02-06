@@ -469,5 +469,5 @@ SELECT message_id, message_date,  DATEDIFF(DAY, message_date, GETDATE()) AS 'Day
 --21 finds the passwords which are not contains at least 8 characters
 SELECT username, lastname, member_password from member where len(member_password) < 8 
 
---22 finds the students who passed (higher than 50 scores) and orders by score
-SELECT member_document.member_id, score from member_document where score > 50 ORDER BY score
+--22 finds the students who passed (higher than 70 scores) and orders by score
+SELECT member_document.member_id, score from member_document where score > 70 ORDER BY score
