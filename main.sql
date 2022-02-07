@@ -515,3 +515,20 @@ CREATE VIEW CurrentStudents AS SELECT member_lecture.lecture_id, COUNT(member_id
 --INDEXES
 CREATE INDEX inx_username ON member (username, lastname)
 CREATE UNIQUE INDEX unique_id ON document (document_id)
+
+--TRIGGER 
+CREATE TRIGGER NewStudentRegister ON member
+AFTER INSERT
+
+AS
+BEGIN
+
+	select * from member
+
+END 
+
+
+INSERT INTO member (member_id, username, lastname, member_password, faculty_id, level_id, phone, mail, adress, tc_identity_num, date_of_birth, country, city) VALUES (
+	5666666666, 'Dwight', 'Schrutue', 'dundermifflin', 2, 4, 5666666666, 'papercomp@gmail.com', 'Scranton', '17333333333',  '1970-04-02', 'USA', 'Pennsylvania')
+
+
