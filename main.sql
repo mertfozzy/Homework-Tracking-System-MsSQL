@@ -498,3 +498,9 @@ ALTER TABLE document ADD author_name nvarchar(60)
 ALTER TABLE lectures ADD lecturer_name nvarchar(60)
 ALTER TABLE member_faculty ADD faculty_location text
 ALTER TABLE member ADD department_id int
+
+ALTER TABLE document_type DROP COLUMN Related_Lecture
+ALTER TABLE document DROP COLUMN author_name
+ALTER TABLE lectures DROP COLUMN lecturer_name
+ALTER TABLE member_faculty DROP COLUMN faculty_location
+ALTER TABLE member DROP COLUMN department_id
