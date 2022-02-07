@@ -491,3 +491,10 @@ UPDATE member SET faculty_id = 3 where phone = 5520639851
 --DELETES
 DELETE FROM member_messages WHERE message_id = 9717
 DELETE FROM document_type WHERE type_no = 174
+
+--ALTER & DROPS
+ALTER TABLE document_type ADD Related_Lecture nvarchar(60)
+ALTER TABLE document ADD author_name nvarchar(60)
+ALTER TABLE lectures ADD lecturer_name nvarchar(60)
+ALTER TABLE member_faculty ADD faculty_location text
+ALTER TABLE member ADD department_id int
