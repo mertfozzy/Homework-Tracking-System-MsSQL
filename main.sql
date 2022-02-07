@@ -512,3 +512,6 @@ CREATE VIEW IstanbulStudents AS SELECT faculty_id, COUNT(*) AS 'Number of Studen
 CREATE VIEW Grades AS SELECT member.member_id, score FROM member_document JOIN member ON member.member_id = member_document.member_id
 CREATE VIEW CurrentStudents AS SELECT member_lecture.lecture_id, COUNT(member_id) AS 'Number of Current Students' FROM member_lecture JOIN lectures ON member_lecture.lecture_id=lectures.lecture_id  GROUP BY member_lecture.lecture_id
 
+--INDEXES
+CREATE INDEX inx_username ON member (username, lastname)
+CREATE UNIQUE INDEX unique_id ON document (document_id)
