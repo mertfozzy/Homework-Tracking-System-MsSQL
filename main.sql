@@ -504,3 +504,11 @@ ALTER TABLE document DROP COLUMN author_name
 ALTER TABLE lectures DROP COLUMN lecturer_name
 ALTER TABLE member_faculty DROP COLUMN faculty_location
 ALTER TABLE member DROP COLUMN department_id
+
+--CREATE VIEWS 
+CREATE VIEW JuniorEngineers AS SELECT * FROM member WHERE level_id>2 AND faculty_id=1
+CREATE VIEW Birthdays AS SELECT member_id, username, lastname, date_of_birth, DATEDIFF(MONTH, date_of_birth, GETDATE())/12 AS 'Age of Student' from member 
+CREATE VIEW IstanbulStudents AS SELECT faculty_id, COUNT(*) AS 'Number of Students who from İstanbul' FROM member WHERE city like 'İ%' GROUP BY faculty_id
+CREATE VIEW Grades AS SELECT member.member_id, score FROM member_document JOIN member ON member.member_id = member_document.member_id
+CREATE VIEW CurrentStudents AS SELECT member_lecture.lecture_id, COUNT(member_id) AS 'Number of Current Students' FROM member_lecture JOIN lectures ON member_lecture.lecture_id=lectures.lecture_id  GROUP BY member_lecture.lecture_id
+
