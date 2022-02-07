@@ -532,3 +532,18 @@ INSERT INTO member (member_id, username, lastname, member_password, faculty_id, 
 	5666666666, 'Dwight', 'Schrutue', 'dundermifflin', 2, 4, 5666666666, 'papercomp@gmail.com', 'Scranton', '17333333333',  '1970-04-02', 'USA', 'Pennsylvania')
 
 
+--
+
+CREATE TRIGGER DeleteBook on Document
+
+AFTER DELETE 
+AS
+BEGIN
+	IF(EXISTS(select * from deleted where type_no = 140))
+	BEGIN
+	RAISERROR('Architecture books cannot deleted because of University copyrights.',0,0)
+	ROLLBACK TRANSACTION
+	END
+END
+
+DELETE FROM document where document_id = 15007
